@@ -15,14 +15,12 @@ body {
     font-size: 16px;
 }
 
-h1, h2 {
-    font-family: var(--heading-font);
+header, nav, main, footer {
+    max-width: 960px;
 }
 
-.main-body {
-    text-align: center;
-    max-width: 960px;
-    margin: 0 auto;
+h1, h2 {
+    font-family: var(--heading-font);
 }
 
 header {
@@ -84,32 +82,77 @@ nav a:hover {
     color: #7CA9A9;
 }
 
-main div img {
-    padding: 5px 0;
-    max-width: 100%;
+.banner-box img {
+    width: 100%;
     height: auto;
-    margin: 0;
 }
 
-main section img {
-    padding: 5px 0;
-    width: 500px;
+.home-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(7,1fr);
+    margin: 20px;
+}
+
+.home-grid img {
+    width: 100%;
     height: auto;
+}
+
+.home-right-img {
+    grid-column: 4/6;
+    grid-row: 1/3;
+}
+
+.home-headline-1 {
+    color: var(--primary-color);
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.home-grid p {
+    padding: 20px;
+}
+
+.home-paragraph-1 {
+    background-color: #3B595C;
+    color: #EDEEF0;
+    font-family: var(--paragraph-font);
+    grid-column: 2/4;
+    grid-row: 2/4;
+}
+
+.home-left-img {
+    grid-column: 1/3;
+    grid-row: 4/6;
+}
+
+.home-headline-2 {
+    color: var(--primary-color);
+    grid-column: 3/6;
+    grid-row: 4/5;
+    padding-left: 1em;
+}
+
+.home-paragraph-2 {
+    background-color: #3B595C;
+    color: #EDEEF0;
+    font-family: var(--paragraph-font);
+    grid-column: 4/6;
+    grid-row: 5/7;
     
 }
 
-main h2 {
-    padding: 5px;
-    color: var(--primary-color);
-}
-
-main p {
+.home-paragraph-3 {
     background-color: #3B595C;
+    width: 100%;
+    height: auto;
     color: #EDEEF0;
-    padding: 10px;
-    padding-bottom: 1.2em;
-    padding-top: 1.2em;
     font-family: var(--paragraph-font);
+    grid-column: 1/6;
+    grid-row: 7/8;
+    text-align: center;
 }
 
 footer {
@@ -117,7 +160,6 @@ footer {
     font-size: 0.7em;
     background-color: #435F4C;
     color: #EDEEF0;
-    padding: 10px;
     display: flex;
     align-items: center;
     justify-content: left;
