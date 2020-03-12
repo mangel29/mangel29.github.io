@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/form.css" rel="stylesheet" />
+    <title>Matthew Angel | WDD 130 My First Form</title>
+</head>
+
+<body>
+    <h1>Oh look, a form!</h1>
+    <main>
+        <div id="feedback"></div>
+        <form action="secret.html" method="get">
+            <ul>
+                <li>
+                    <label for="name">Full Name: </label>
+                    <input type="text" id="name" name="name" required="req"
+                        placeholder="Enter what your mother called you">
+                </li>
+                <li>
+                    <label for="mail">E-mail: </label>
+                    <input type="email" id="mail" name="email" required="req"
+                        placeholder="Enter your internet mail address">
+                </li>
+                <li>
+                    <label for="message">Message: </label>
+                    <textarea id="message" name="message" placeholder="Got anything else to say?"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Send Message</button>
+                </li>
+            </ul>
+        </form>
+    </main>
+    <footer>
+        &copy;2020 | Matthew Angel | HTML Forms | <a href="https://www.byui.edu/online" target="_blank">BYU-Idaho Online
+            Learning</a>
+    </footer>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form element so we can read what was entered in it.
+        const formElement = document.forms[0];
+
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function (e) {
+            // stop the form from doing the default action
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello ' + formElement.name.value +
+                '! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+        });
+    </script>
+</body>
+
+</html>

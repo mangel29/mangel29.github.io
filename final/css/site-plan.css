@@ -19,11 +19,11 @@ body {
     max-width: 900px;
     margin: 0 auto;
     background-color: white;
-    padding: 1em
+    padding: 1em;
 }
 
 img {
-    max-width: 100%
+    max-width: 100%; 
 }
 
 h1,
@@ -50,7 +50,7 @@ header>h1 {
 p {
     font-family: var(--paragraph-font);
     color: black;
-    padding: 1em
+    padding: 1em;
 }
 
 .colors {
