@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+    --primary-color: #153243;
+    --secondary-color: #B4B8AB;
+    --accent1-color: #284B63;
+    --accent2-color: #F4F9E9;
+    --primary-font: "Brandon Grotesque";
+    --paragraph-font: Brandon Grotesque, Helvetica, sans-serif;
+}
+
+body {
+    background-color: white;
+    font-size: 16px;
+}
+
+header, nav, main, footer {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-family: var(--primary-font);
+}
+
+header {
+    background-color: #153243;
+    color: #F4F9E9;
+    padding: 2px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header img {
+    width: 80px;
+    height: auto;
+    display: flex;
+    padding-left: 1em;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin-left: 10px;
+    line-height: 1em;
+
+}
+
+.motto {
+    font-family: var(--paragraph-font);
+    line-height: 10px;
+    text-align: left;
+    font-size: 1rem;
+    padding-bottom: 2em;
+    margin-left: 20px;
+}
+
+nav {
+    font-family: var(--heading-font);
+    line-height: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+nav>ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav a {
+    padding: 1em;
+    min-width: 70px;
+}
+
+nav a:link,
+nav a:visited {
+    color: var(--primary-color);
+}
+
+nav a:hover {
+    color: #284B63;
+}
