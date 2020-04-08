@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url("https://use.typekit.net/wvz7cjj.css");
 
 :root {
     --primary-color: #153243;
@@ -28,7 +28,7 @@ h2 {
 
 header {
     color: #F4F9E9;
-    padding: 2px 0;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,6 +44,12 @@ header h1 {
 
 h2 {
     font-weight: normal;
+}
+
+p {
+    color: #153243;
+    font-family: var(--primary-font);
+    font-size: 18px;
 }
 
 .hero {
@@ -123,13 +129,13 @@ h2 {
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(5, 1fr);
-
     margin: 10px;
 }
 
 .home-grid img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .home-first-img,
@@ -145,11 +151,13 @@ h2 {
 .goals {
     grid-column: 3/5;
     padding: 10px;
+    margin-top: 100px;
+    margin-left: 50px;
 }
 
 .home-headline-1 {
     color: var(--primary-color);
-    
+
 }
 
 .home-paragraph-1 {
@@ -165,6 +173,8 @@ h2 {
 .plan {
     grid-column: 2/4;
     padding: 10px;
+    margin-top: 100px;
+    margin-right: 50px;
 }
 
 .home-headline-2 {
@@ -186,6 +196,8 @@ h2 {
 .shape {
     grid-column: 3/5;
     padding: 10px;
+    margin-top: 100px;
+    margin-left: 50px;
 }
 
 .home-headline-3 {
@@ -203,6 +215,7 @@ h2 {
     grid-template-columns: repeat(8, 1fr);
     font-family: var(--primary-font);
     color: #153243;
+    margin-bottom: 50px;
 }
 
 .testimonials h2 {
@@ -235,7 +248,9 @@ h2 {
     margin-right: 40px;
 }
 
-input[type=text], select, textarea {
+input[type=text],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -244,9 +259,11 @@ input[type=text], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
+}
 
-input[type=email], select, textarea {
+input[type=email],
+select,
+textarea {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -255,8 +272,8 @@ input[type=email], select, textarea {
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
-  }
-  
+}
+
 input[type=submit] {
     background-color: #EDEEF0;
     color: #153243;
@@ -265,17 +282,17 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
     font-family: var(--primary-font);
-  }
-  
+}
+
 input[type=submit]:hover {
     background-color: #B4B8AB;
-  }
+}
 
 .contact {
     text-align: center;
     color: #153243;
 }
-  
+
 .container {
     border-radius: 5px;
     background-color: #153243;
@@ -285,7 +302,156 @@ input[type=submit]:hover {
     color: #F4F9E9;
     font-family: var(--primary-font);
     margin-bottom: 20px;
-  }
+}
+
+@media screen and (max-width: 550px) {
+    .recipe-grid {
+        display: block;
+    }
+}
+
+.recipe-grid {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 10px;
+    text-align: center;
+}
+
+.daily-recipe {
+    text-align: center;
+    color: #153243;
+    margin-top: 40px;
+}
+
+.recipe-grid img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.card-1 {
+    width: 280px;
+    padding: 20px;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    grid-column: 3/4;
+}
+
+.card-2 {
+    width: 280px;
+    padding: 20px;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    grid-column: 4/5;
+}
+
+.card-3 {
+    width: 280px;
+    padding: 20px;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    grid-column: 5/6;
+}
+
+
+.recipe-grid p {
+    padding: 0px 20px 0px 10px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.viewButton {
+    border-radius: 4px;
+    border: 1px solid #153243;
+    padding: 5px 7px;
+    font-size: 13px;
+    color: #153243;
+    float: left;
+    font-family: var(--primary-font);
+}
+
+.buttons {
+    padding: 5px 10px;
+    margin-bottom: 50px;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 550px) {
+    .d-story {
+        display: block;
+    }
+}
+
+.story h2 {
+    text-align: center;
+    color: #153243;
+}
+
+.d-story {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 10px;
+    margin-bottom: 80px;
+}
+
+.d-story img {
+    border-radius: 10px;
+}
+
+.dwight-img {
+    grid-column: 2/3;
+}
+
+.snippet {
+    grid-column: 3/7;
+}
+
+.readButton {
+    border-radius: 4px;
+    border: 1px solid #153243;
+    padding: 5px 7px;
+    font-size: 13px;
+    color: #153243;
+    float: left;
+    font-family: var(--primary-font);
+}
+
+@media screen and (max-width: 550px) {
+    .about-us {
+        display: block;
+    }
+}
+
+.about-us h2 {
+    color: #153243;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.our-story {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 10px;
+}
+
+.our-story img {
+    border-radius: 10px;
+}
+
+.canyon-img {
+    border-radius: 10px;
+    grid-column: 2/3;
+    margin-top: 50px;
+}
+
+.our-story-p {
+    grid-column: 3/7;
+}
 
 footer {
     background-color: #153243;
@@ -294,6 +460,7 @@ footer {
     align-items: center;
     grid-template-columns: repeat(4, 1fr);
     padding-top: 2.5px;
+    margin-top: 50px;
 }
 
 footer p {
