@@ -469,6 +469,7 @@ footer p {
     justify-content: left;
     padding-left: 1em;
     grid-column: 1/3;
+    color: #EDEEF0;
 }
 
 footer a {
