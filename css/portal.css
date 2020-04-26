@@ -1,9 +1,9 @@
 @import url("https://use.typekit.net/wvz7cjj.css");
 
 :root {
-    --primary-color: #007FC8;
+    --primary-color: #001433;
     --secondary-color: #FDB515;
-    --accent1-color: #001433;
+    --accent1-color: #007FC8;
     --primary-font: "Brandon Grotesque";
     --paragraph-font: Brandon Grotesque, Helvetica, sans-serif;
 }
@@ -15,14 +15,14 @@ header {
 
 header img {
     float: right;
-    box-shadow: 0px 0px 10px slategrey;
+    box-shadow: 0px 0px 10px var(--primary-color);
     margin-top: 20px;
     margin-right: 20px;
     border-radius: 0px 10px 0px 0px;
 }
 
 h1 {
-    color: var(--secondary-color);
+    color: white;
     padding: 20px;
     font-family: var(--primary-font);
     text-align: center;
@@ -52,7 +52,7 @@ a:visited {
 
 footer {
     background-color: var(--primary-color);
-    color: var(--secondary-color);
+    color: white;
     padding: 10px;
     font-family: var(--primary-font);
     border-radius: 10px;
