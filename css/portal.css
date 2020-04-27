@@ -41,6 +41,14 @@ main {
     color:#001433;
 }
 
+a:link {
+    color: var(--primary-color);
+}
+
+footer a:link {
+    color: white;
+}
+
 a:visited {
     color: var(--primary-color);
 }
