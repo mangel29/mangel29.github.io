@@ -3,7 +3,6 @@
 :root {
     --primary-color: #001433;
     --secondary-color: #FDB515;
-    --accent1-color: #007FC8;
     --primary-font: "Brandon Grotesque";
     --paragraph-font: Brandon Grotesque, Helvetica, sans-serif;
 }
@@ -40,10 +39,6 @@ main {
     font-family: var(--primary-font);
     margin-left: 20px;
     color:#001433;
-}
-
-h2 {
-    border-bottom: var(--accent1-color);
 }
 
 a:visited {
