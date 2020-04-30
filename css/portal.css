@@ -1,23 +1,32 @@
 @import url("https://use.typekit.net/wvz7cjj.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 
 :root {
     --primary-color: #001433;
     --secondary-color: #FDB515;
-    --primary-font: "Brandon Grotesque";
+    --primary-font: "Roboto Slab";
+    --secondary-font: "Brandon Grotesque";
     --paragraph-font: Brandon Grotesque, Helvetica, sans-serif;
 }
 
-header {
+header,
+nav,
+main,
+footer {
+    margin: 0 auto;
+    padding: 0.75rem;
+    max-width: 45rem;
+}
+
+header, footer {
+    text-align: center;
     background-color: var(--primary-color);
     border-radius: 10px;
 }
 
 header img {
-    float: right;
-    box-shadow: 0px 0px 10px var(--primary-color);
     margin-top: 20px;
     margin-right: 20px;
-    border-radius: 0px 10px 0px 0px;
 }
 
 h1 {
@@ -25,6 +34,11 @@ h1 {
     padding: 20px;
     font-family: var(--primary-font);
     text-align: center;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.5rem;
 }
 
 body {
@@ -36,7 +50,7 @@ body {
 }
 
 main {
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
     margin-left: 20px;
     color:#001433;
 }
