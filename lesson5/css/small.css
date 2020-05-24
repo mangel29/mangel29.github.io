@@ -89,27 +89,53 @@ nav ul.hide {
 }
 
 /*----------- MAIN --------------*/
+
 main {
     padding: 0 2%;
     min-height: 10rem;
 }
 
-.hero {
-    margin: 10px auto;
-    background-color: #eee;
-    border: 1px solid #333;
-    width: 960px;
-    height: 300px;
+div#reminder {
+    background-color: #4D5382;
+    border-radius: 0px;
 }
 
-main div {
-    background-color: #514663;
-    color: white;
-    margin: 10px;
-    padding: 1rem;
+div.showme {
+    display: block;
+}
+
+div.hideme {
+    display: none;
+}
+
+.herodiv {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border: transparent;
+    margin-bottom: 10px;
+}
+
+.herodiv img {
     border-radius: 5px;
-    border: solid;
-    border-color: #4D5382;
+    width: 100%;
+}
+
+.weathersummary {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 180px;
+    padding: .5rem;
+    border-radius: 5px;
+    background-color: #4D5382;
+    opacity: .8;
+    color: white;
+}
+
+section.forecast {
+    display: none;
 }
 
 /*----------- FOOTER --------------*/
