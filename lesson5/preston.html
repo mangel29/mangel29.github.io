@@ -54,17 +54,19 @@
 
     <!-- CONTENT HERE -->
     <main>
-        <div id="reminder" class="hideme">Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</div>
+        <div id="reminder" class="hideme">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park
+            pavilion.</div>
         <h1>Preston</h1>
         <div class="herodiv">
             <img src="images/preston_hero.jpg" alt="Preston hero">
-        <section class="weathersummary">
-            <h3>Weather Summary</h3>
-            <p>Label: Value</p>
-            <p>Label: Value</p>
-            <p>Label: Value</p>
-        </section>
+            <section class="weathersummary">
+                <h3>Weather Summary</h3>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+                <p>Label: Value</p>
+            </section>
         </div>
+        <h2 class="five">Five Day Forecast</h2>
         <section class="forecast">
             <div>
                 <h5>Monday</h5>
@@ -92,8 +94,40 @@
                 <p>54&deg;</p>
             </div>
         </section>
-        <div class="article">article to end all articles</div>
-        <div class="contact">contact information</div>
+        <div class="article">
+            <img src="images/bison.jpg" alt="cloudy meadow">
+            <h3>COVID Summer?</h3>
+            <p>Will there be another wave of Covid-19? And if so, how big will it be, and will there be more waves after
+                it?
+
+                The answer to those questions depend on seasonality, the susceptibility of the population to the
+                disease, the rate at which the coronavirus mutates and how we come out of lockdown.
+
+                Colds and influenza are seasonal because those viruses generally survive outside the body for a shorter
+                time in high heat and high humidity than in cold weather and low humidity. People also spend more time
+                indoors in winter, coming into close contact with others with less ventilation, so respiratory
+                infections are far more common in winter, although of course they can sicken people in summer, too.</p>
+            <section class="contact">
+                <h2>Contact Us</h2>
+                <div class="fullcontact">
+                    <div class="contactinfo">
+                        <div class="address">
+                        <h3 class="url">Address:</h3>
+                        <p>Weather or Not<br>2710 Fernglen<br>Carlsbad, CA 92008</p>
+                        </div>
+                        <div class="numemail">
+                            <h3>Phone:</h3>
+                            <p>760.720.2309</p>
+                            <h3>Email:</h3>
+                            <p>info@weatherornot.com</p>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3339.5363286075635!2d-117.33681884929135!3d33.17379767086121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc72208486a14d%3A0x35c11e17b2a16042!2s2710%20Fernglen%20Rd%2C%20Carlsbad%2C%20CA%2092008!5e0!3m2!1sen!2sus!4v1590359480946!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </section>
+
 
     </main>
 
@@ -104,7 +138,16 @@
             <span id="dateToday"></span>
         </footer>
     </div>
-    <script src="js/dateFooter.js"></script>
+    <script src="js/dateFooter.js">
+        const today = new Date();
+        const dayNumber = today.getDay();
+        const element = document.getElementById("reminder");
+        if (dayNumber == 6) {
+            element.classList.add("showme");
+        } else {
+            element.classList.add("hideme");
+        }
+    </script>
 </body>
 
 </html>

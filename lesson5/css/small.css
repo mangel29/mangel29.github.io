@@ -93,6 +93,7 @@ nav ul.hide {
 main {
     padding: 0 2%;
     min-height: 10rem;
+    color: #514663;
 }
 
 div#reminder {
@@ -115,17 +116,19 @@ div.hideme {
     background-color: transparent;
     border: transparent;
     margin-bottom: 10px;
+    
 }
 
 .herodiv img {
     border-radius: 5px;
     width: 100%;
+    
 }
 
 .weathersummary {
     position: absolute;
-    top: 30px;
-    left: 30px;
+    top: 10px;
+    left: 10px;
     width: 180px;
     padding: .5rem;
     border-radius: 5px;
@@ -134,8 +137,60 @@ div.hideme {
     color: white;
 }
 
+.five {display: none;}
+
 section.forecast {
     display: none;
+}
+
+.article {
+    background-color: transparent;
+    padding: 1rem;
+    border-radius: 5px;
+    color: #4D5382;
+    font-size: 16px;
+    margin: 10px;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.article p {
+    margin: 10px;
+}
+
+.article h3 {
+    margin: 10px;
+}
+
+.contact {
+    background-color: #658E9C;
+    color: white;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.contactinfo {
+    display: flex;
+}
+
+.address {
+    margin: 10px;
+}
+
+.numemail {
+    margin: 10px;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    height: 200px;
 }
 
 /*----------- FOOTER --------------*/

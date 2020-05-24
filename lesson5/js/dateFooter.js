@@ -1,4 +1,4 @@
-    var today = new Date();
+    const today = new Date();
 
     var dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
@@ -14,13 +14,3 @@
 
     var el = document.getElementById("dateToday");
     el.textContent = message;
-
-   
-        
-    const dayNumber = today.getDay();
-    const element = document.getElementById("reminder");
-    if (dayNumber == 6) {
-        element.classList.add("showme");
-    } else {
-        element.classList.add("hideme");
-    }

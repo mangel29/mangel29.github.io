@@ -24,8 +24,16 @@
 
 
     /*----------- MAIN --------------*/
+    .weathersummary {
+        top: 30px;
+        left: 30px;
+        width: 180px;
+        padding: .5rem;
+    }
 
-
+    iframe {
+        margin-left: 150px;
+    }
 
     /*----------- FOOTER --------------*/
 
