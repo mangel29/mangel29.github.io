@@ -107,6 +107,7 @@
                 time in high heat and high humidity than in cold weather and low humidity. People also spend more time
                 indoors in winter, coming into close contact with others with less ventilation, so respiratory
                 infections are far more common in winter, although of course they can sicken people in summer, too.</p>
+                </div>
             <section class="contact">
                 <h2>Contact Us</h2>
                 <div class="fullcontact">
@@ -123,7 +124,7 @@
                         </div>
                     </div>
                     <div class="map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3339.5363286075635!2d-117.33681884929135!3d33.17379767086121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc72208486a14d%3A0x35c11e17b2a16042!2s2710%20Fernglen%20Rd%2C%20Carlsbad%2C%20CA%2092008!5e0!3m2!1sen!2sus!4v1590359480946!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3339.5363286075635!2d-117.33681884929135!3d33.17379767086121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dc72208486a14d%3A0x35c11e17b2a16042!2s2710%20Fernglen%20Rd%2C%20Carlsbad%2C%20CA%2092008!5e0!3m2!1sen!2sus!4v1590359480946!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
                 </div>
             </section>
@@ -138,11 +139,12 @@
             <span id="dateToday"></span>
         </footer>
     </div>
-    <script src="js/dateFooter.js">
+    <script src="js/dateFooter.js"></script>
+    <script>
         const today = new Date();
         const dayNumber = today.getDay();
         const element = document.getElementById("reminder");
-        if (dayNumber == 6) {
+        if (dayNumber == 5) {
             element.classList.add("showme");
         } else {
             element.classList.add("hideme");
