@@ -13,7 +13,7 @@ function preLoadImage(img) {
 
 const imgOptions = {
     threshold: 1,
-    rootMargin: "0px 0px -50px 0px"
+    rootMargin: "0px 0px 100px 0px"
 };
 
 const imgObserver = new IntersectionObserver((entries, imgObserver) => {
@@ -33,7 +33,7 @@ images.forEach(image => {
 
 const appearOptions = {
     threshold: 1,
-    rootMargin: "0px 0px -50px 0px"
+    rootMargin: "0px 0px 100px 0px"
 };
 
 const appearOnScroll = new IntersectionObserver

@@ -55,59 +55,89 @@
     <!-- CONTENT HERE -->
     <main>
         <h2>Weather Gallery</h2>
-        <div class="card">
-            <img src="images/lightning.jpg" alt="Lightning lights up the night sky">
-            <div class="description">
-            <p>Lightning lights up the night sky</p>
-            </div>
-        </div>
-        <div class="card">
-            <img src="images/fog.jpg" alt="Lightning lights up the night sky">
-            <div class="description">
-                <p>Lightning lights up the night sky</p>
+        <section class="cards">
+            <article class="card">
+                <picture class="fade-in">
+                    <img src="images/placeholder.jpg" data-src="images/lightning.jpg"
+                        alt="Lightning lights up the night sky">
+                </picture>
+                <div class="description">
+                    <p>Lightning lights up the night sky</p>
                 </div>
-        </div>
-        <div class="card">
-            <img src="images/snowman.jpg" alt="Lightning lights up the night sky">
-            <div class="description">
-                <p>Lightning lights up the night sky</p>
+            </article>
+            <article class="card">
+                <picture class="fade-in">
+                    <img src="images/placeholder.jpg" data-src="images/fog.jpg" alt="A tree stand alone in heavy fog">
+                </picture>
+                <div class="description">
+                    <p>A tree stand alone in heavy fog</p>
                 </div>
-        </div>
-        <div class="card">
-            <img src="images/lightningres.jpg" alt="Lightning lights up the night sky">
-            <div class="description">
-                <p>Lightning lights up the night sky</p>
+            </article>
+            <article class="card">
+                <picture class="fade-in">
+                    <img src="images/placeholder.jpg" data-src="images/snowman.jpg"
+                        alt="A man walks along a snowy road">
+                </picture>
+                <div class="description">
+                    <p>A man walks along a snowy road</p>
                 </div>
-        </div>
-        <div class="card">
-            <img src="images/rainbow.jpg" alt="Lightning lights up the night sky">
-            <div class="description">
-                <p>Lightning lights up the night sky</p>
+            </article>
+            <article class="card">
+                <picture class="fade-in">
+                    <img src="images/placeholder.jpg" data-src="images/lightningres.jpg"
+                        alt="Lightning lights up the sky over a neighborhood">
+                </picture>
+                <div class="description">
+                    <p>Lightning lights up the sky over a neighborhood</p>
                 </div>
-        </div>
-        <div class="card">
-            <img src="images/snowres.jpg" alt="Lightning lights up the night sky">
-            <div class="description">
-                <p>Lightning lights up the night sky</p>
+            </article>
+            <article class="card">
+                <picture class="fade-in">
+                    <img src="images/placeholder.jpg" data-src="images/rainbow.jpg"
+                        alt="A full rainbow across a pink sky">
+                </picture>
+                <div class="description">
+                    <p>A full rainbow across a pink sky</p>
                 </div>
-        </div>
-        <div class="card">
-            <img src="images/fogriver.jpg" alt="Lightning lights up the night sky">
-            <div class="description">
-                <p>Lightning lights up the night sky</p>
+            </article>
+            <article class="card">
+                <picture class="fade-in">
+                    <img src="images/placeholder.jpg" data-src="images/snowres.jpg"
+                        alt="Snow covers a resedential street">
+                </picture>
+                <div class="description">
+                    <p>Snow covers a resedential street</p>
                 </div>
-        </div>
-        <div class="card">
-            <img src="images/umbrella.jpg" alt="Lightning lights up the night sky">
-            <div class="description">
-                <p>Lightning lights up the night sky</p>
+            </article>
+            <article class="card">
+                <picture class="fade-in">
+                    <img src="images/placeholder.jpg" data-src="images/fogriver.jpg"
+                        alt="A boat navigates a foggy river">
+                </picture>
+                <div class="description">
+                    <p>A boat navigates a foggy river</p>
                 </div>
-        </div>
-        <div class="card">
-            <img src="images/cloudy.jpg" alt="Lightning lights up the night sky"><div class="description">
-                <p>Lightning lights up the night sky</p>
+            </article>
+            <article class="card">
+                <picture class="fade-in">
+                    <img src="images/placeholder.jpg" data-src="images/umbrella.jpg"
+                        alt="A man hides beneath an umbrella in the rain">
+                </picture>
+                <div class="description">
+                    <p>A man hides beneath an umbrella in the rain</p>
                 </div>
-        </div>
+            </article>
+            <article class="card">
+                <picture class="fade-in">
+                    <img src="images/placeholder.jpg" data-src="images/cloudy.jpg"
+                        alt="A cloudy sky covers the counrty side">
+                </picture>
+                <div class="description">
+
+                    <p>A cloudy sky covers the counrty side</p>
+                </div>
+            </article>
+        </section>
     </main>
 
     <!-- FOOTER HERE -->
@@ -128,6 +158,7 @@
             element.classList.add("hideme");
         }
     </script>
+    <script src="js/fadein.js"></script>
 </body>
 
 </html>
