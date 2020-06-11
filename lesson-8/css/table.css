@@ -28,14 +28,19 @@ tbody tr:nth-child(odd) {
     background-color: #e7ffed;
 }
 
-thead th {
+caption {
     background-color: #7fb9c2;
     color: black;
     font-size: 26px;
     font-weight: 700;
+    padding: 10px;
+    border-top: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    box-shadow: 8px 10px 15px #628ca6;
 }
 
-tbody tr:nth-child(1) {
+thead th {
     background-color: #628ca6;
     color: white;
     font-weight: 700;
