@@ -1,0 +1,44 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 64rem;
+        margin: auto;
+    }
+
+    /*----------- BODY --------------*/
+
+
+
+    /*----------- HEADER --------------*/
+
+
+
+    /*----------- NAVIGATION --------------*/
+    nav ul li a {
+        padding: .6rem 1rem;
+    }
+
+
+    /*----------- MAIN --------------*/
+    .cards {
+        /* Add shadows to create the "card" effect */
+        transition: 0.3s;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+    
+
+      /* On mouse-over, add a deeper shadow */
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  }
+
+    /*----------- FOOTER --------------*/
+
+}
+
+/* end of media query */

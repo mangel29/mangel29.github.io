@@ -1,0 +1,192 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Brandon Grotesque, sans-serif;
+}
+
+div#headWrap {
+    background-color: #514663;
+}
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    color: white;
+    grid-template-columns: 110px auto;
+}
+
+header img {
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+/*----------- NAVIGATION --------------*/
+
+div#navWrap {
+    background-color: #4D5382;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a {
+    background-color: #658E9C;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+    color: #514663;
+}
+/*------------FORM---------------*/
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #514663;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #514663;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #514663;
+    font-size: 16px;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #514663;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #514663;
+    width: 100%;
+    max-width: 20rem;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #514663;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #514663;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+.flexly {
+	display: block;
+    font-size: 1rem;
+    border: solid 1px #514663;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #514663;
+    width: 100%;
+    max-width: 20rem;
+}
+
+#ratingvalue {
+    margin: 0 15px;
+}
+
+textarea {
+    border: solid 1px #514663;
+    border-radius: 4px;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    padding: .5rem 2%;
+    text-align: center;
+    background-color: #4D5382;
+    color: white;
+}
+
+
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}

@@ -1,0 +1,19 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*section img[data-src] {
+    filter: blur(0.2em);
+  }
+
+  
+  section img {
+    filter: blur(0em);
+    transition: filter 0.5s;
+  }*/
+
+footer {
+    margin: 0 auto;
+    padding: 20px;
+}

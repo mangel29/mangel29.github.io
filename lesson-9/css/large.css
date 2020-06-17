@@ -1,0 +1,46 @@
+/* 64em is also 1028px (if basefont is 16px) */
+@media only screen and (min-width: 64rem) {
+
+    header,
+    nav,
+    main,
+    footer {
+        max-width: 64rem;
+        margin: auto;
+    }
+
+    /*----------- BODY --------------*/
+
+
+
+    /*----------- HEADER --------------*/
+
+
+
+    /*----------- NAVIGATION --------------*/
+    nav ul li a {
+        padding: .6rem 1rem;
+    }
+
+
+    /*----------- MAIN --------------*/
+    .cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .cards section {
+        display: grid;
+    }
+
+    iframe {
+        margin-left: 150px;
+    }
+
+    /*----------- FOOTER --------------*/
+
+}
+
+/* end of media query */
