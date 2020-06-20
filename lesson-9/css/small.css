@@ -152,7 +152,17 @@ footer {
     color: white;
 }
 
+footer a:link {
+    color: white;
+}
 
+a:visited {
+    color: white;
+}
+
+footer a:visited {
+    color: white;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
