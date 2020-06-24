@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Weather site - WDD 230">
+    <meta name="author" content="Matt Angel">
+
+    <title>Weather or Not | Storm Center</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="weatherfavicon.ico">
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="lesson-8/css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="lesson-8/css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="lesson-8/css/large.css" rel="stylesheet">
+    <!-- font family -->
+    <link rel="stylesheet" href="https://use.typekit.net/wvz7cjj.css">
+    <!-- Javascript file -->
+    <script type="text/javascript" src="js/responsiveMenu.js" defer></script>
+
+
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <div id="headWrap">
+        <header class="clearfix">
+            <img src="images/won_logo.png" alt="logo">
+            <h1>Weather or Not</h1>
+            <h2>We'll let you know!</h2>
+        </header>
+    </div>
+
+    <!-- NAVIGATION HERE -->
+    <div id="navWrap">
+        <nav class="clearfix">
+            <button onclick="toggleMenu()">&#9776;</button>
+            <ul class="hide" id="primaryNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="preston.html">Preston</a></li>
+                <li><a href="">Soda Springs</a></li>
+                <li><a href="">Fish Haven</a></li>
+                <li class="active"><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- CONTENT HERE -->
+    <main>
+        <h1>Storm Center</h1>
+
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Storm Report</legend>
+                <label class="top">Full Name* <input type="text" name="name" pattern="[A-Za-z ]{5,}" required></label>
+                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
+                <label class="top">Email <input type="email" name="email" placeholder="youremail@gmail.com"></label>
+                <label class="top">Zipcode* <input type="number" name="zip" placeholder="12345" required></label>
+                <label class="top">Storm Date <input type="date" name="stormdate"></label>
+                <label for="stormtypes" class="top">Storm Type
+                    <input list="stormtype" name="stormtypes" id="stormtypes">
+                </label>
+                <label>
+                    <datalist id="stormtype">
+                        <option value="Rain">
+                        <option value="Thunderstorm">
+                        <option value="Hail">
+                        <option value="Snow">
+                        <option value="Hurricane">
+                        <option value="Tornado">
+                        <option value="Flood">
+                        <option value="Sharknado">
+                    </datalist>
+                </label>
+                <label class="top">Storm Severity</label>
+                <label class="flexly">
+                    <input type="range" id="rating" name="severity" value="5" min="1" max="10" step="1"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span
+                        id="ratingvalue">5</span>
+                </label>
+                <label class="top">Storm Region
+                    <select name="region">
+                        <option value="">Select Region &#9662;</option>
+                        <option value="fishhaven">Fish Haven</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                    </select>
+                </label>
+                    <div>Were you in danger?</div>
+                <label class="sbs"><input type="radio" name="danger" value="yes">Yes</label>
+                <label class="sbs"><input type="radio" name="danger" value="maybe">Maybe</label>
+                <label class="sbs"><input type="radio" name="danger" value="no">No</label>
+                <label class="top">Additional Commments</label>
+                <label>
+                    <textarea name="comments" placeholder="Comments..." rows="10" cols="40"></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Send My Report" class="submitBtn">
+
+        </form>
+    </main>
+
+    <!-- FOOTER HERE -->
+    <div id="footWrap">
+        <footer>
+            &copy; Matt Angel |
+            <span id="dateToday"></span>
+        </footer>
+    </div>
+    <script src="js/dateFooter.js"></script>
+    <script>
+        const today = new Date();
+        const dayNumber = today.getDay();
+        const element = document.getElementById("reminder");
+        if (dayNumber == 5) {
+            element.classList.add("showme");
+        } else {
+            element.classList.add("hideme");
+        }
+    </script>
+    <script src="js/rating.js"></script>
+</body>
+
+</html>

@@ -89,108 +89,88 @@ nav ul.hide {
 }
 
 /*----------- MAIN --------------*/
-
 main {
     padding: 0 2%;
-    min-height: 10rem;
+    min-height: 20rem;
+    color: #514663;
+}
+/*------------FORM---------------*/
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #514663;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: #514663;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #514663;
+    font-size: 16px;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #514663;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #514663;
+    width: 100%;
+    max-width: 20rem;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
     color: #514663;
 }
 
-div#reminder {
-    background-color: #4D5382;
-    border-radius: 0px;
-}
-
-div.showme {
-    display: block;
-}
-
-div.hideme {
-    display: none;
-}
-
-.herodiv {
-    position: relative;
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-    border: transparent;
-    margin-bottom: 10px;
-    
-}
-
-picture img {
-    border-radius: 5px;
-    width: 100%;
-    
-}
-
-section.weathersummary {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 200px;
-    padding: .5rem;
-    border-radius: 5px;
-    background-color: #4D5382;
-    opacity: .8;
+form input.submitBtn {
+    border: none;
+    background-color: #514663;
     color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
 }
 
-.five {display: none;}
-
-section#forecast {
-    display: none;
+form label.top input:required {
+    border-left: red solid 6px;
 }
 
-.article {
-    background-color: transparent;
-    padding: 1rem;
-    border-radius: 5px;
-    color: #4D5382;
-    font-size: 16px;
-    margin: 10px;
+form label.top input:required:valid {
+    border-left: green solid 6px;
 }
 
-.article img {
+.flexly {
+	display: block;
+    font-size: 1rem;
+    border: solid 1px #514663;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #514663;
     width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin: 10px;
+    max-width: 20rem;
 }
 
-.article p {
-    margin: 10px;
+#ratingvalue {
+    margin: 0 15px;
 }
 
-.article h3 {
-    margin: 10px;
-}
-
-.contact {
-    background-color: #658E9C;
-    color: white;
-    padding: 1rem;
-    border-radius: 5px;
-    margin: 20px;
-}
-
-.contactinfo {
-    display: flex;
-}
-
-.address {
-    margin: 10px;
-}
-
-.numemail {
-    margin: 10px;
-}
-
-iframe {
-    display: block;
-    width: 100%;
-    height: 200px;
+textarea {
+    border: solid 1px #514663;
+    border-radius: 4px;
 }
 
 /*----------- FOOTER --------------*/

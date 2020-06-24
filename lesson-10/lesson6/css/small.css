@@ -129,13 +129,18 @@ section.weathersummary {
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 200px;
-    padding: .5rem;
+    width: 225px;
+    padding: 1rem;
     border-radius: 5px;
     background-color: #4D5382;
     opacity: .8;
     color: white;
 }
+
+section.weathersummary p{
+    margin: 5px;
+}
+
 
 .five {display: none;}
 
@@ -201,7 +206,17 @@ footer {
     color: white;
 }
 
+footer a:link {
+    color: white;
+}
 
+a:visited {
+    color: white;
+}
+
+footer a:visited {
+    color: white;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {

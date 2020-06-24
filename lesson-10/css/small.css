@@ -96,75 +96,26 @@ main {
     color: #514663;
 }
 
-div#reminder {
-    background-color: #4D5382;
-    border-radius: 0px;
+.cards {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
-div.showme {
-    display: block;
-}
-
-div.hideme {
-    display: none;
-}
-
-.herodiv {
-    position: relative;
-    width: 100%;
-    height: auto;
-    background-color: transparent;
-    border: transparent;
-    margin-bottom: 10px;
-    
-}
-
-picture img {
-    border-radius: 5px;
-    width: 100%;
-    
-}
-
-section.weathersummary {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 200px;
-    padding: .5rem;
-    border-radius: 5px;
-    background-color: #4D5382;
-    opacity: .8;
+.cards section {
     color: white;
-}
-
-.five {display: none;}
-
-section#forecast {
-    display: none;
-}
-
-.article {
-    background-color: transparent;
-    padding: 1rem;
+    background-color: #514663;
     border-radius: 5px;
-    color: #4D5382;
-    font-size: 16px;
-    margin: 10px;
+    margin-top: 20px;
 }
 
-.article img {
+.cards article {
+    text-align: center;
+}
+
+.cards img {
     width: 100%;
     height: auto;
-    border-radius: 5px;
-    margin: 10px;
-}
-
-.article p {
-    margin: 10px;
-}
-
-.article h3 {
-    margin: 10px;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .contact {
@@ -201,7 +152,17 @@ footer {
     color: white;
 }
 
+footer a:link {
+    color: white;
+}
 
+a:visited {
+    color: white;
+}
+
+footer a:visited {
+    color: white;
+}
 
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
