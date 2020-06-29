@@ -62,7 +62,10 @@
 
     .fullcontact {
         display: flex;
+    }
 
+    .cards article {
+        padding: 20px;
     }
 
     .contactinfo {

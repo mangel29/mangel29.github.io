@@ -16,7 +16,7 @@ fetch(requestURL)
             let h2 = document.createElement('h2');
             h2.textContent = towns[i].name;
             info.appendChild(h2);
-            let h3 = document.createElement('h3');
+            let h3 = document.createElement('h5');
             h3.textContent = towns[i].motto;
             info.appendChild(h3);
             let p = document.createElement('p');
