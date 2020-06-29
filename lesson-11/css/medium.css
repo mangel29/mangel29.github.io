@@ -1,0 +1,94 @@
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 35rem) {
+
+
+    /*----------- BODY --------------*/
+
+
+
+    /*----------- HEADER --------------*/
+    header img {
+        width: 75px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+
+    /*----------- NAVIGATION --------------*/
+    nav button {
+        display: none;
+    }
+
+    nav ul.hide {
+        display: block;
+    }
+
+    nav ul {
+        margin-left: 2%;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    nav ul li a {
+        padding: .8rem 1rem;
+        border-top: none;
+        border-right: 1px solid rgba(0, 0, 0, 0.3);
+    }
+
+
+    /*----------- MAIN --------------*/
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cards section {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cards section:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    .fullcontact {
+        display: flex;
+
+    }
+
+    .contactinfo {
+        display: flex;
+    }
+
+    .address {
+        grid-column: 1/3;
+        margin: 10px;
+    }
+
+    .numemail {
+        margin: 10px;
+        grid-column: 3/5;
+    }
+
+    iframe {
+        display: block;
+        width: 300px;
+        height: 200px;
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+
+    /*----------- FOOTER --------------*/
+
+}
+
+/* end of media query */
