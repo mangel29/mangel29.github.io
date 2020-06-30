@@ -20,8 +20,14 @@ fetch(requestURL)
             h3.textContent = towns[i].motto;
             info.appendChild(h3);
             let p = document.createElement('p');
-            p.textContent = "Year Founded: " + towns[i].yearFounded + " | Population: " + towns[i].currentPopulation + " | Annual Rain Fall: " + towns[i].averageRainfall;
+            p.textContent = "Year Founded: " + towns[i].yearFounded;
             info.appendChild(p);
+            let p2 = document.createElement('p');
+            p2.textContent = "Population: " + towns[i].currentPopulation;
+            info.appendChild(p2);
+            let p3 = document.createElement('p');
+            p3.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
+            info.appendChild(p3);
             card.appendChild(info);
             let img = document.createElement('img');
             img.setAttribute('src', towns[i].photo);
