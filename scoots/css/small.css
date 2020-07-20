@@ -1,0 +1,400 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+}
+
+div#headWrap {
+    background-color: white;
+}
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    color: #9a1619;
+    grid-template-columns: 110px auto;
+}
+
+header img {
+    float: left;
+    margin-right: 10px;
+    width: 50px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+
+/*----------- NAVIGATION --------------*/
+
+div#navWrap {
+    background-color: #c03639;
+}
+
+nav button {
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+nav ul li.active a {
+    background-color: #9a1619;
+    color: white;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+nav ul.hide {
+    display: none;
+}
+
+/*----------- MAIN --------------*/
+
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+    color: #9a1619;
+}
+
+div#reminder {
+    background-color: #9a1619;
+    border-radius: 0px;
+}
+
+div.showme {
+    display: block;
+}
+
+div.hideme {
+    display: none;
+}
+
+.herodiv {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border: transparent;
+    margin-bottom: 10px;    
+}
+
+picture img {
+    width: 100%;
+    z-index: 0;
+    border-bottom: solid 1px #9a1619;
+}
+
+.reserve {
+    text-align: center;
+    background-color: #9a1619;
+    border-radius: 5px;
+    color: white;
+    padding: 40px;
+    width: 400px;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.reserve h2 {
+    padding-bottom: 40px;
+    font-family: roboto slab, serif;
+}
+
+.reserve a:link {
+    background-color: #dce2e8;
+    padding: 20px;
+    color: #9a1619;
+    border-radius: 5px;
+}
+
+.reserve a:visited {
+    color: #9a1619;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+th {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #9a1619;
+    color: white;
+    padding: 10px 10px;
+    font-size: 1.2em;
+    font-family: roboto slab, serif;
+
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+.column-title {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #c03639;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+td {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+    padding: 8px 10px;
+    border: 1px solid lightgray;
+    text-align: left;
+}
+
+.best {
+    text-align: center;
+}
+
+.best img {
+    width: 400px;
+    border: solid 1px #9a1619;
+}
+
+.best h2 {
+    font-size: 2em;
+    font-family: roboto slab, serif;
+}
+
+.best section {
+    text-align: center;
+}
+
+section.weathersummary {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #9a1619;
+    color: white;
+}
+
+section.weathersummary h2 {
+    font-family: roboto slab, serif;
+
+}
+
+section.weathersummary p{
+    margin: 5px;
+}
+
+.five {display: none;}
+
+section#forecast {
+    display: none;
+}
+
+
+
+.contact {
+    background-color: #dce2e8;
+    color: #9a1619;
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.contact h2 {
+    text-align: center;
+}
+
+.contactinfo {
+    display: flex;
+}
+
+.address {
+    margin: 10px;
+}
+
+.numemail {
+    margin: 10px;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    height: 200px;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    padding: .5rem 2%;
+    text-align: center;
+    background-color: #9a1619;
+    color: white;
+}
+
+footer a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+footer a:visited {
+    color: white;
+}
+
+footer p {
+    font-size: 0.7em;
+    justify-content: left;
+    padding-left: 1em;
+    grid-column: 1/3;
+}
+
+.social {
+    grid-column: 5/6;
+    padding-right: 1em;
+    padding-top: 1em;
+}
+
+footer img {
+    padding: 0.5px;
+    width: 20px;
+    height: auto;
+    margin-left: 5px;
+    justify-content: right;
+}
+
+/*------------RESERVATION FORM---------------*/
+
+form fieldset {
+    margin: 2rem 0;
+    border: 1px solid #9a1619;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+.res-form {
+    font-family: roboto slab, serif;
+}
+
+form legend {
+    color: #9a1619;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+    color: #9a1619;
+    font-size: 16px;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #9a1619;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #9a1619;
+    width: 100%;
+    max-width: 20rem;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #9a1619;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: #9a1619;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+.flexly {
+	display: block;
+    font-size: 1rem;
+    border: solid 1px #9a1619;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #9a1619;
+    width: 100%;
+    max-width: 20rem;
+}
+
+#ratingvalue {
+    margin: 0 15px;
+}
+
+textarea {
+    border: solid 1px #9a1619;
+    border-radius: 4px;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+
+}
