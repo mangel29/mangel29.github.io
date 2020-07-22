@@ -7,7 +7,7 @@
     "rhalf": "$20",
     "rfull": "$30",
 	"whalf": "$25",
-    "wfull": "$35", 
+	"wfull": "$35"
 },
 
 {
@@ -17,17 +17,17 @@
     "rhalf": "$30",
     "rfull": "$40",
 	"whalf": "$35",
-    "wfull": "$45", 
+    "wfull": "$45" 
 },
 
 {
-	"type": "Honda PCX150 Scooter"
+	"type": "Honda PCX150 Scooter",
     "persons": "2",
     "photo": "images/pcx150.jpg",
     "rhalf": "$40",
     "rfull": "$50",
 	"whalf": "$45",
-    "wfull": "$55", 
+    "wfull": "$55" 
 },
 
 {
@@ -37,7 +37,7 @@
     "rhalf": "$50",
     "rfull": "$70",
 	"whalf": "$60",
-    "wfull": "$80", 
+    "wfull": "$80" 
 },
 
 {
@@ -47,7 +47,7 @@
     "rhalf": "$70",
     "rfull": "$100",
 	"whalf": "$85",
-    "wfull": "$125", 
+    "wfull": "$125" 
 },
 
 {
@@ -57,8 +57,8 @@
     "rhalf": "$60",
     "rfull": "$85",
 	"whalf": "$70",
-    "wfull": "$90", 
-},
+    "wfull": "$90" 
+}
 
 ]
 }

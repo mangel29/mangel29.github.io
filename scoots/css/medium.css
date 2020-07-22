@@ -140,6 +140,10 @@
         margin-bottom: 50px;
     }
 
+    td {
+        padding: 8px 10px;
+    }
+
     /*----------- FOOTER --------------*/
 
 }
