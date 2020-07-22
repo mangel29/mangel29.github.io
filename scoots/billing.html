@@ -91,7 +91,15 @@
     <div id="footWrap">
         <footer>
             &copy; Matt Angel |
-            <span id="dateToday"></span>
+            <script>
+                var date = document.lastModified;
+                document.write("Last Modified: " + date);
+            </script> 
+            <div class="social">
+                <a href="https://www.facebook.com"><img src="images/facebook-icon-png.png" alt="Facebook"></a>
+                <a href="https://www.instagram.com/?hl=en"><img src="images/Instagram-icon-png.png" alt="Instagram"></a>
+                <a href="https://twitter.com"><img src="images/twitter-icon-png.png" alt="Twitter"></a>
+              </div>
         </footer>
     </div>
     <script src="js/dateFooter.js"></script>

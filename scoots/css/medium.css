@@ -107,6 +107,12 @@
         width: 40%;
     }
 
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
     .fullcontact {
         display: flex;
 

@@ -1,0 +1,64 @@
+{
+"rentals": [
+{
+	"type": "Honda Metro Scooter",
+    "persons": "1",
+    "photo": "images/metro.jpg",
+    "rhalf": "$20",
+    "rfull": "$30",
+	"whalf": "$25",
+    "wfull": "$35", 
+},
+
+{
+	"type": "Honda Dio Scooter",
+    "persons": "2",
+    "photo": "images/dio.jpg",
+    "rhalf": "$30",
+    "rfull": "$40",
+	"whalf": "$35",
+    "wfull": "$45", 
+},
+
+{
+	"type": "Honda PCX150 Scooter"
+    "persons": "2",
+    "photo": "images/pcx150.jpg",
+    "rhalf": "$40",
+    "rfull": "$50",
+	"whalf": "$45",
+    "wfull": "$55", 
+},
+
+{
+	"type": "Honda Pioneer ATV",
+    "persons": "4",
+    "photo": "images/hondapioneer.jpg",
+    "rhalf": "$50",
+    "rfull": "$70",
+	"whalf": "$60",
+    "wfull": "$80", 
+},
+
+{
+	"type": "Jeep Wrangler - 4 door with A/C",
+    "persons": "5",
+    "photo": "images/jeep4door.jpg",
+    "rhalf": "$70",
+    "rfull": "$100",
+	"whalf": "$85",
+    "wfull": "$125", 
+},
+
+{
+	"type": "Jeep Wrangler - 2 door",
+    "persons": "4",
+    "photo": "images/jeep2door.jpg",
+    "rhalf": "$60",
+    "rfull": "$85",
+	"whalf": "$70",
+    "wfull": "$90", 
+},
+
+]
+}

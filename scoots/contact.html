@@ -6,7 +6,7 @@
     <meta name="description" content="Term Project - WDD 230">
     <meta name="author" content="Matt Angel">
 
-    <title>Scoots | Reservations</title>
+    <title>Scoots | Contact Us</title>
 
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -60,49 +60,41 @@
 
     <!-- CONTENT HERE -->
     <main>
+
+        <section class="contact">
+            <h2>Come On By</h2>
+            <div class="fullcontact">
+                <div class="contactinfo">
+                    <div class="address">
+                        <h3 class="url">Address:</h3>
+                        <p>Scoots<br>Av. Rafael E. Melgar 21, El Parque, 77600<br>San Miguel de Cozumel, Q.R., Mexico</p>
+                    </div>
+                    <div class="numemail">
+                        <h3>Phone:</h3>
+                        <p>760.720.2309</p>
+                        <h3>Email:</h3>
+                        <p>info@scoots.com</p>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239283.63938305786!2d-87.0143395488553!3d20.432027527425568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1sen!2sus!4v1594863450033!5m2!1sen!2sus"
+                        width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                </div>
+            </div>
+        </section>
+
         <div class="res-form">
-        <h1>Rental Reservation</h1>
+        <h2>Contact Us</h2>
         </div>
         <form method="get" action="billing.html">
             <fieldset>
                 <legend>Reservation Information</legend>
                 <label class="top">Full Name* <input type="text" name="name" pattern="[A-Za-z ]{5,}" required></label>
-                <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
-                <label class="top">Email <input type="email" name="email" placeholder="youremail@gmail.com"></label>
-                <label class="top">Zipcode* <input type="number" name="zip" placeholder="12345" required></label>
-                <label class="top">Rental Date <input type="date" name="rentaldate"></label>
-                <label class="top">Cruise Line <input type="text" name="cruise"></label>
-                <label for="rentaltypes" class="top">Rental Type
-                    <input list="rentaltype" name="rentaltypes" id="rentaltypes">
-                </label>
-                <label>
-                    <datalist id="rentaltype">
-                        <option value="Honda Metro Scooter">
-                        <option value="Honda Dio Scooter">
-                        <option value="Honda PCX150 Scooter">
-                        <option value="Honda Pioneer ATV">
-                        <option value="Jeep Wrangler - 4 door">
-                        <option value="Jeep Wrangler - 2 door">
-                    </datalist>
-                </label>
-                <div>Rental Period</div>
-                <label class="sbs"><input type="radio" name="danger" value="yes">Half Day</label>
-                <label class="sbs"><input type="radio" name="danger" value="maybe">Full Day</label>
-                <label class="top">Number of Persons</label>
-                <label class="flexly">
-                    <input type="range" id="rating" name="severity" value="3" min="1" max="5" step="1"
-                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)"><span
-                        id="ratingvalue">3</span>
-                </label>
-                <label class="top">Rental Location
-                    <select name="location">
-                        <option value="">Select Location &#9662;</option>
-                        <option value="playa">Playa del Carmen-Cozumel Ferry</option>
-                        <option value="terminal">Terminal Puerta Maya</option>
-                    </select>
-                </label>
+                <label class="top">Email <input type="email" name="email" placeholder="youremail@gmail.com" required></label>
 
-                <label class="top">Additional Commments</label>
+                <label class="top">Message</label>
                 <label>
                     <textarea name="comments" placeholder="Comments..." rows="10" cols="40"></textarea>
                 </label>

@@ -247,6 +247,7 @@ section#forecast {
 
 .contact h2 {
     text-align: center;
+    font-family: roboto slab, serif;
 }
 
 .contactinfo {
@@ -389,6 +390,41 @@ form label.top input:required:valid {
 textarea {
     border: solid 1px #9a1619;
     border-radius: 4px;
+}
+
+/*------------TOURS---------------*/
+
+.cards {
+    margin-bottom: 20px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.card {
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #9a1619;
+}
+
+.description {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+  }
+
+.card img {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+  }
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
 }
 
 /*----- Clearfix: Force an Element not to collapse -----*/
