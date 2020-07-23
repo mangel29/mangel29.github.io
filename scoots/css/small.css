@@ -102,6 +102,29 @@ main h2 {
     text-align: center;
 }
 
+.cards {
+    text-align: center;
+    border: solid 1px #9a1619;
+    border-radius: 5px;
+}
+
+.cards img {
+    width: 50%;
+}
+
+.tourcards {
+    text-align: center;
+    margin: 10px;
+}
+
+.tourcards img {
+    width: 50%;
+}
+
+.tourcards .card {
+    margin: 10px;
+}
+
 div#reminder {
     background-color: #9a1619;
     border-radius: 0px;
@@ -456,7 +479,7 @@ td {
     text-align: center;
 }
 
-.contact-form label.top input, form label.top select {
+.contact-form label.top input, form label.top {
     margin: 0 auto;
 }
 

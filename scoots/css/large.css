@@ -44,6 +44,11 @@
         grid-template-columns: 1fr 1fr 1fr;
       }
 
+      .tourcards {
+        transition: 0.3s;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
     
 
       /* On mouse-over, add a deeper shadow */

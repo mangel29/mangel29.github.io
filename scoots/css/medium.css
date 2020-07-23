@@ -113,6 +113,19 @@
         grid-gap: 10px;
     }
 
+    .cards img {
+        width: 40%;
+    }
+
+    .tourcards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
     .fullcontact {
         display: flex;
 
