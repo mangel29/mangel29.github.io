@@ -299,6 +299,12 @@ footer img {
 
 /*------------RESERVATION FORM---------------*/
 
+form {
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+}
+
 form fieldset {
     margin: 2rem 0;
     border: 1px solid #9a1619;
@@ -308,6 +314,7 @@ form fieldset {
 
 .res-form {
     font-family: roboto slab, serif;
+    text-align: center;
 }
 
 form legend {
@@ -333,6 +340,7 @@ form label.top input, form label.top select {
     color: #9a1619;
     width: 100%;
     max-width: 20rem;
+    margin: 0 auto;
 }
 
 form label.sbs {
@@ -350,6 +358,7 @@ form input.submitBtn {
     margin: 0 0 2rem 2%;
     width: 96%;
     max-width: 20rem;
+    justify-content: left;
 }
 
 form label.top input:required {
@@ -369,6 +378,7 @@ form label.top input:required:valid {
     color: #9a1619;
     width: 100%;
     max-width: 20rem;
+    margin: 0 auto;
 }
 
 #ratingvalue {
